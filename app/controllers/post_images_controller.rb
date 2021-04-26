@@ -10,7 +10,7 @@ class PostImagesController < ApplicationController
     if @post_image.save
       redirect_to post_images_path
     else
-      redirect_to new_post
+      render :new
     end   
   end
   
